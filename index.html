@@ -5,20 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Azuki Style Music Player</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
   </head>
   <body>
     <div class="music-player-container">
-      
       <div class="avatar">
-        <img src="assets/1391.png" alt="" />
+        <img src="assets/2729.png" alt="" />
       </div>
-      <div class="toggle-player">
-        <ion-icon name="remove-outline"></ion-icon>
+      <div class="toggle-player-backdrop">
+        <div class="toggle-player">
+          <ion-icon name="remove-outline"></ion-icon>
+        </div>
       </div>
-
       <div class="player">
         <div class="sound-bars-lottie">
           <div class="sound-bars"></div>
@@ -41,5 +47,6 @@
       </div>
     </div>
     <script src="main.js"></script>
+    <script src="background.js"></script>
   </body>
 </html>

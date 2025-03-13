@@ -14,7 +14,10 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: url(./assets/a-1391.png) no-repeat 50% 50%;
+  /* background: black no-repeat 50% 50%; */
+  /* background: url(./assets/a-1391.png) no-repeat 50% 50%; */
+  /* background: url(./assets/mugen.jpeg) no-repeat 50% 50%; */
+  /* background: url(./assets/web_230116.png) no-repeat 50% 50%; */
   background-size: cover;
   backdrop-filter: contrast(1);
   /* backdrop-filter: blur(10px); */
@@ -46,6 +49,8 @@ body {
   opacity: 0;
 }
 
+.toggle-player-backdrop {}
+
 .toggle-player {
   position: absolute;
   top: -20px;
@@ -57,7 +62,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.7);
+  background: #A8A8A8;
   /* filter: blur(1px); */
   /* backdrop-filter: blur(0px); */
   border: 1px solid rgba(255, 255, 255, 0.2);
