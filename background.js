@@ -7,10 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateBackground() {
         const screenWidth = window.innerWidth;
-        const shouldHide = screenWidth <= 900;
+        const screenHeight = window.innerHeight;
+        const shouldHide = (screenWidth <= 900 || screenHeight < 700);
 
         document.body.style.backgroundColor = "black";
-        document.body.style.backgroundImage = `url('assets/web_230116${shouldHide ? ".jpg" : ".png"}')`;
+        // document.body.style.backgroundImage = `url('assets/web_230116${shouldHide ? ".jpg" : ".png"}')`;
+        document.body.style.backgroundImage = `url('assets/SHINY ALEX.GIF')`;
         document.body.style.backgroundSize = "contain";
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundPosition = "center center";
@@ -35,9 +37,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    // Only allow toggling if screen is large enough
     togglePlayer.addEventListener("click", function () {
-        if (window.innerWidth > 900) { // Only allow toggling if screen is large enough
+        if (window.innerWidth > 900) {
             isHidden = !isHidden;
+            updatePlayerVisibility();
+        }
+        if (window.innerHeight >= 700) {
+            isHidden = isHidden;
             updatePlayerVisibility();
         }
     });
