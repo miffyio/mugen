@@ -46,7 +46,7 @@ let trackList = [
     name: "夜に駆ける",
     name_font_size: "1.125rem",
     artist: "YOASOBI",
-    path: "./songs/01_YOASOBI_夜に駆ける.mp3",
+    path: "./songs/01_Yoasobi_夜に駆ける.mp3",
   },
   {
     name: "祝福",
@@ -70,7 +70,7 @@ let trackList = [
     name: "世界が終わるまでは",
     name_font_size: "0.75rem",
     artist: "WANDS",
-    path: "./songs/05_WANDS_世界が終わるまでは.mp3",
+    path: "./songs/05_WANDS_世界が終わるまでは.mp3",
   },
   {
     name: "Change The World",
