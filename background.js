@@ -10,15 +10,22 @@ document.addEventListener("DOMContentLoaded", function () {
         const screenHeight = window.innerHeight;
         const shouldHide = (screenWidth <= 900 || screenHeight < 700);
 
-        document.body.style.backgroundColor = "black";
-        // document.body.style.backgroundImage = `url('assets/web_230116${shouldHide ? ".jpg" : ".png"}')`;
-        document.body.style.backgroundImage = `url('assets/SHINY ALEX.GIF')`;
+        document.body.style.backgroundColor = shouldHide ? "#202020" : "#000000";
+        document.body.style.backgroundImage = `url('assets/${shouldHide ? "mugen_word_logo.png" : "SHINY ALEX.GIF"}')`;
+        // document.body.style.backgroundImage = `url('assets/SHINY ALEX.GIF')`;
         document.body.style.backgroundSize = "contain";
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundPosition = "50% 50%";
         // document.body.style.backgroundAttachment = "fixed"; // weird mobile shift issue
 
-        // Auto-hide player if screen is too small
+        // hide player if screen is too small
+        if (screenHeight <= 430 || screenWidth <= 430) {
+            musicPlayer.style.display = "none";
+        } else {
+            musicPlayer.style.display = "initial";
+        }
+
+        // update player visibility
         isHidden = shouldHide;
         updatePlayerVisibility();
     }
