@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.style.backgroundImage = `url('assets/SHINY ALEX.GIF')`;
         document.body.style.backgroundSize = "contain";
         document.body.style.backgroundRepeat = "no-repeat";
-        document.body.style.backgroundPosition = "center center";
-        document.body.style.backgroundAttachment = "fixed";
+        document.body.style.backgroundPosition = "50% 50%";
+        // document.body.style.backgroundAttachment = "fixed"; // weird mobile shift issue
 
         // Auto-hide player if screen is too small
         isHidden = shouldHide;
