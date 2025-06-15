@@ -149,7 +149,7 @@ function nextTrack() {
 
 function prevTrack() {
   if (trackIndex > 0) trackIndex -= 1;
-  else trackIndex = trackList.length;
+  else trackIndex = trackList.length - 1;
   loadTrack(trackIndex);
   playTrack();
 }
